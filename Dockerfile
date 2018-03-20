@@ -19,7 +19,7 @@ RUN apt-get update && \
 RUN git clone https://github.com/dcschiba/julius-server.git && \
     cd julius-server && \
     chmod a+x ./run-julius.sh && \
-    npm install && \
+    npm install
 #   npm start
 
 # COPY assemble run id_rsa /usr/lib/s2i/

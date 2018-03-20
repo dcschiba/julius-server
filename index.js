@@ -28,8 +28,8 @@ const storage = multer.diskStorage({
 const upload = multer({ storage });
 
 // start Julius
-// const child = spawn(SHELL_FILE);
-// child.stdin.setEncoding('utf-8');
+const child = spawn(SHELL_FILE);
+child.stdin.setEncoding('utf-8');
 
 function readVoiceData(voiceFile) {
   child.stdin.write(`${voiceFile}\n`);
@@ -57,7 +57,7 @@ app.post('/julius/speech', upload.single('voice'), (req, res) => {
     if (txt.match(/sentence1/)) {
       // 音声認識結果のみ抽出
       const txtArr = txt.split(/\n/);
-      const result = txtArr.filter(element => element.match(/sentence1/))[0].replace(/\s+/g, '').slice(10);
+      const result = txtArr.filter(element => element.match(/sentence1/))[0].replace(/\[s\]/g, '').slice(10);
       res.status(200);
       logger.info('voice recognition succeeded', result);
       res.json({ result });
