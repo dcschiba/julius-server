@@ -45,7 +45,7 @@ app.use('/julius', (req, res, next) => {
   res.header('Content-Type', 'application/json; charset=utf-8');
   next();
 });
-app.use('/client', express.static('client'));
+
 app.listen(port, () => {
   logger.info(`listening on port ${port} ...`);
 });
