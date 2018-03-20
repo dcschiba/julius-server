@@ -57,7 +57,7 @@ app.post('/julius/speech', upload.single('voice'), (req, res) => {
     if (txt.match(/sentence1/)) {
       // 音声認識結果のみ抽出
       const txtArr = txt.split(/\n/);
-      const result = txtArr.filter(element => element.match(/sentence1/))[0].replace(/\[s\]/g, '').slice(10);
+      const result = txtArr.filter(element => element.match(/sentence1/))[0].replace(/\[s\]/g, '').slice(10).trim();
       res.status(200);
       logger.info('voice recognition succeeded', result);
       res.json({ result });
