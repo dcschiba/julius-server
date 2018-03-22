@@ -38,7 +38,7 @@ function readVoiceData(voiceFile) {
 // initialize express
 const app = express();
 
-app.use('/julius', (req, res, next) => {
+app.use('/api/julius', (req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Methods', 'GET,POST,OPTIONS');
   res.header('Access-Control-Allow-Headers', 'Content-Type');
@@ -51,7 +51,7 @@ app.listen(port, () => {
 });
 
 // speech to text
-app.post('/julius/speech', upload.single('voice'), (req, res) => {
+app.post('/api/julius/speech', upload.single('voice'), (req, res) => {
   child.stdout.on('data', (buf) => {
     const txt = buf.toString('UTF-8');
     if (txt.match(/sentence1/)) {
