@@ -1,0 +1,54 @@
+0	[mapswitch]	ch i z u s e N t a k u
+0	[projectionswitch]	z u h o: s e N t a k u
+0	[orthographic]	ky u: t a i hy o: g e N
+0	[multimap]	m a r u ch i m a q p u
+0	[basictest]	k i h o N k i n o u t e s u t o
+0	[gsm]	j i: e s u e m u
+0	[ukmet]	u: k e: m e q t o
+0	[gfs]	j i: e f u e s u
+0	[msm]	e m u e s u e m u
+0	[msmground]	e m u e s u e m u g u r a u N d o
+0	[compasshour]	k o N p a s u
+0	[hilofront]	h a i r o: f u r o N t o
+0	[windbarbs]	y a b a n e
+0	[seavisibility]	k a i j o u sh i t e i
+0	[dash]	d a q sh u
+0	[surfacepressure]	ch i j o u k i a ts u
+0	[iceberg]	hy o u z a N
+0	[seasprayicing]	s e N t a i ch a k u hy o u
+0	[iceconcentration]	hy o u s e ts u m i ts u d o
+0	[current]	k a r e N t o
+0	[waveblend]	y u: g i h a k o u
+0	[metartaf]	m e t a: t a f u
+0	[cargps]	k a: j i: p i: e s u
+0	[livecamera]	r a i b u k a m e r a
+0	[intelligentcamera]	i N t e r i j e N t o k a m e r a
+0	[lightning]	k a m i n a r i
+0	[radar]	r e: d a:
+0	[radaramedas]	r e: d a: a m e d a s u
+0	[satellite]	s a t e r a i t o
+0	[sigwx]	s i g u w e z a:
+0	[sigmet]	s i g u m e q t o
+0	[airport]	e a: p o: t o
+0	[vaa]	b u i e: e:
+0	[fix]	f i q k u s u
+0	[fir]	e f u a i a: r u
+0	[navaids]	n a b u e i z u
+0	[latlon]	r a t o r o N
+0	[tiledmap]	t a i r u d o m a q p u
+0	[gass]	g a s u s u k e: r u
+0	[asc]	e: e s u sh i: s u k e: r u
+0	[disasterreport]	s a i g a i j o u h o u
+0	[amedas]	a m e d a s u
+0	[acos]	e i k o s u
+0	[tropicalstorm]	t a i h u u
+0	[jmawarn]	ch u: k e i h o u
+0	[jmaseawarn]	k a i j o u k e i h o u
+0	[earthquake]	j i sh i N m a p p u
+0	[jp10ten]	j u q t e N h o u k o k u
+0	[gpvhourlyAnalysis]	m a i j i t a i k i k a i s e k i
+0	[analysisAsia]	j i q ky o: k a i s e k i a j i a
+0	[analysisGlobal]	j i q ky o: k a i s e k i g u r o: b a r u
+0	[knSnow]	k a i s e k i s e k i s e ts u sh i N
+1	[[s]]	silB
+2	[[s]]	silE

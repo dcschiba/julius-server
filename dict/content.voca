@@ -1,0 +1,58 @@
+% CONTENT
+mapswitch ch i z u s e N t a k u
+projectionswitch z u h o: s e N t a k u
+orthographic ky u: t a i hy o: g e N
+multimap m a r u ch i m a q p u
+basictest k i h o N k i n o u t e s u t o
+gsm j i: e s u e m u
+ukmet u: k e: m e q t o
+gfs j i: e f u e s u
+msm e m u e s u e m u
+msmground e m u e s u e m u g u r a u N d o
+compasshour k o N p a s u
+hilofront h a i r o: f u r o N t o
+windbarbs y a b a n e
+seavisibility k a i j o u sh i t e i
+dash d a q sh u
+surfacepressure ch i j o u k i a ts u
+iceberg hy o u z a N
+seasprayicing s e N t a i ch a k u hy o u
+iceconcentration hy o u s e ts u m i ts u d o
+current k a r e N t o
+waveblend y u: g i h a k o u
+metartaf m e t a: t a f u
+cargps k a: j i: p i: e s u
+livecamera r a i b u k a m e r a
+intelligentcamera i N t e r i j e N t o k a m e r a
+lightning k a m i n a r i
+radar r e: d a:
+radaramedas r e: d a: a m e d a s u
+satellite s a t e r a i t o
+sigwx s i g u w e z a:
+sigmet s i g u m e q t o
+airport e a: p o: t o
+vaa b u i e: e:
+fix f i q k u s u
+fir e f u a i a: r u
+navaids n a b u e i z u
+latlon r a t o r o N
+tiledmap t a i r u d o m a q p u
+gass g a s u s u k e: r u
+asc e: e s u sh i: s u k e: r u
+disasterreport s a i g a i j o u h o u
+amedas a m e d a s u
+acos e i k o s u
+tropicalstorm t a i h u u
+jmawarn ch u: k e i h o u
+jmaseawarn k a i j o u k e i h o u
+earthquake j i sh i N m a p p u
+jp10ten j u q t e N h o u k o k u
+gpvhourlyAnalysis m a i j i t a i k i k a i s e k i
+analysisAsia j i q ky o: k a i s e k i a j i a
+analysisGlobal j i q ky o: k a i s e k i g u r o: b a r u
+knSnow k a i s e k i s e k i s e ts u sh i N
+
+% NS_B
+[s] silB
+% NS_E
+[s] silE
