@@ -52,22 +52,51 @@ app.listen(port, () => {
 
 // speech to text
 app.post('/api/julius/speech', upload.single('voice'), (req, res) => {
+  const inputFile = `${TMP_DIR}/${req.file.filename}`;
+  const outputFile = `${TMP_DIR}/c_${req.file.filename}`;
+
   child.stdout.on('data', (buf) => {
     const txt = buf.toString('UTF-8');
+    // 音声認識失敗
+    if (txt.match(/WARNING/)) {
+      res.status(200);
+      logger.info('voice recognition failure');
+      res.json({ result: '' });
+
+      fs.unlink(inputFile, (err) => {
+        if (err) {
+          logger.error('file delete failure');
+        };
+      });
+      fs.unlink(outputFile, (err) => {
+        if (err) {
+          logger.error('file delete failure');
+        };
+      });
+      return child.stdout.removeAllListeners('data');
+    }
+
+    // 音声認識結果のみ抽出
     if (txt.match(/sentence1/)) {
-      // 音声認識結果のみ抽出
       const txtArr = txt.split(/\n/);
       const result = txtArr.filter(element => element.match(/sentence1/))[0].replace(/\[s\]/g, '').slice(10).trim();
       res.status(200);
       logger.info('voice recognition succeeded', result);
       res.json({ result });
-      // TODO 音声ファイル削除
+
+      fs.unlink(inputFile, (err) => {
+        if (err) {
+          logger.error('File delete failure');
+        };
+      });
+      fs.unlink(outputFile, (err) => {
+        if (err) {
+          logger.error('File delete failure');
+        };
+      });
       return child.stdout.removeAllListeners('data');
     }
   });
-  // TODO 無音データのエラーハンドリング
-  const inputFile = `${TMP_DIR}/${req.file.filename}`;
-  const outputFile = `${TMP_DIR}/c_${req.file.filename}`;
   exec(`sox ${inputFile} -c 1 -r 16000 ${outputFile}`, (err) => {
     if (err) {
       logger.fatal(err);
